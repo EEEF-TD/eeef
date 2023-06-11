@@ -38,8 +38,8 @@ figlet EEEF -w 50000 -f Electronic -d /usr/share/figlet-fonts | lolcat --freq=0.
 ########################################
 echo ""
 
-echo  -e $white "                          Please Press Enter To Start  "
-read Enter
+#echo  -e $white "                          Please Press Enter To Start  "
+#read Enter
 clear
 
 echo -e $white "           An analytical Study & Simulation Of Hacking Computer Systems       " | lolcat -a -i #-d 50
@@ -99,7 +99,7 @@ if [ "$UI" = 1 ]
 	if [ $name = 99 ]
 		then
 		clear
-		bash eeef
+		bash /usr/bin/eeef
 	fi
 	if [ $name = 1 ]
 		then
@@ -127,7 +127,7 @@ if [ "$UI" = 1 ]
 		if [  $MALTEGO = 00 ]
 			then
 			clear
-			bash eeef
+			bash /usr/bin/eeef
 		fi
 		if [ $MALTEGO = 1 ]
 			then
@@ -148,7 +148,7 @@ if [ "$UI" = 1 ]
 		if [ $MALTEGO = 3 ]
 			then
 			clear
-			bash eeef
+			bash /usr/bin/eeef
 		fi
 	fi
 	if [ $name = 2 ]
@@ -194,7 +194,7 @@ if [ "$UI" = 1 ]
 		if [ $WHATWEB = 3 ]
 			then
 			clear
-			bash eeef
+			bash /usr/bin/eeef
 		fi
 	fi
 	if [ $name = 3 ]
@@ -252,7 +252,7 @@ if [ "$UI" = 1 ]
 		if [ $DMITRY = 4 ]
 			then
 			clear
-			bash eeef
+			bash /usr/bin/eeef
 		fi
 	fi
 	if [ $name = 4 ]
@@ -296,7 +296,7 @@ if [ "$UI" = 1 ]
 		if [ $THEHARVESTER = 3 ]
 			then
 			clear
-			bash eeef
+			bash /usr/bin/eeef
 		fi
 	fi
 	if [ $name = 5 ]
@@ -340,7 +340,7 @@ if [ "$UI" = 1 ]
 		if [ $NIKTO = 3 ]
 			then
 			clear
-			bash eeef
+			bash /usr/bin/eeef
 		fi
 	fi
 	if [ $name = 7 ]
@@ -379,12 +379,12 @@ if [ "$UI" = 1 ]
 			echo ""
 			echo ""
 			read url
-			wapiti $url
+			wapiti -u $url
 		fi
 		if [ $WAPITI = 3 ]
 			then
 			clear
-			bash eeef
+			bash /usr/bin/eeef
 		fi
 	fi
 	if [ $name = 8 ]
@@ -424,7 +424,7 @@ if [ "$UI" = 1 ]
 		if [ $HTTRACK = 3 ]
 			then
 			clear	
-			bash eeef
+			bash /usr/bin/eeef
 		fi
 	fi
 	if [ $name = 6 ]
@@ -501,13 +501,13 @@ if [ "$UI" = 1 ]
 			if [ "$scan" = 4 ]
 				then
 				clear
-				bash eeef
+				bash /usr/bin/eeef
 			fi
 		fi
 		if [ $NMAP = 4 ]
 			then
 			clear
-			bash eeef
+			bash /usr/bin/eeef
 		fi
 	
 
@@ -546,7 +546,7 @@ if [ "$UI" = 2 ]
 	if [ $payload = 0 ]
 		then
 		clear
-		bash eeef
+		bash /usr/bin/eeef
 	fi
 	if [ $payload = 1 ]
 		then
@@ -621,7 +621,7 @@ if [ "$UI" = 3 ]
 		read $name1
 		echo "$name1" | md5sum
 		echo  $red
-		read -p 'Enter any kay to back' a
+		read -p 'Enter any key to exit' a
 	fi
 	if [ $hash = 2 ]
 		then
@@ -629,7 +629,7 @@ if [ "$UI" = 3 ]
 		read $name2
 		echo "$name2" | sha1sum
 		echo  -e $red
-		read -p 'Enter any kay to back' a
+		read -p 'Enter any key to exit' a
 	fi
 	if [ $hash = 3 ]
 		then
@@ -637,7 +637,7 @@ if [ "$UI" = 3 ]
 		read $name3
 		echo "name3" | sha224sum
 		echo  -e $red
-		read -p 'Enter any kay to back' a
+		read -p 'Enter any key to exit' a
 	fi
 	if [ $hash = 4 ]
 		then
@@ -645,7 +645,7 @@ if [ "$UI" = 3 ]
 		read $name4
 		echo "$name4" | sha512sum
 		echo  -e $red
-		read -p 'Enter any kay to back' a
+		read -p 'Enter any key to exit' a
 	fi
 	if [ $hash = 5 ]
 		then
@@ -653,7 +653,7 @@ if [ "$UI" = 3 ]
 		read $name5
 		echo "$name5" | sha256sum
 		echo  -e $red
-		read -p 'Enter any kay to back' a
+		read -p 'Enter any key to exit' a
 	fi
 	if [ $hash = 6 ]
 		then
@@ -661,12 +661,12 @@ if [ "$UI" = 3 ]
 		read $name6
 		echo "$name6" | sha384sum
 		echo  -e $red
-		read -p 'Enter any kay to back' a
+		read -p 'Enter any key to exit' a
 	fi
 	if [ $hash = 0 ]
 		then
 		clear
-		bash eeef
+		bash /usr/bin/eeef
 	fi
 
 
