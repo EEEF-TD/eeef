@@ -38,8 +38,8 @@ figlet EEEF -w 50000 -f Electronic -d /usr/share/figlet-fonts | lolcat --freq=0.
 ########################################
 echo ""
 
-#echo  -e $white "                          Please Press Enter To Start  "
-#read Enter
+echo  -e $white "                          Please Press Enter To Start  "
+read Enter
 clear
 
 echo -e $white "           An analytical Study & Simulation Of Hacking Computer Systems       " | lolcat -a -i #-d 50
